@@ -1,0 +1,23 @@
+{
+  "name": "creative_Portfolio",
+  "version": "1.0.0",
+  "description": "Will use this to create my portfolio using HTML, CSS, and JS. \r For CSS, I will use SASS and compile it to CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aybuddy/creative_Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aybuddy/creative_Portfolio/issues"
+  },
+  "homepage": "https://github.com/aybuddy/creative_Portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
