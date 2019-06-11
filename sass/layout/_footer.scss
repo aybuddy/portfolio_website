@@ -1,0 +1,25 @@
+#social {
+	// margin-top: auto;
+	background-color: transparent;
+	padding: 8px;
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		padding: 8px;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	a {
+		text-decoration: none;
+	}
+	a:link,
+	a:visited {
+		color: white;
+	}
+}

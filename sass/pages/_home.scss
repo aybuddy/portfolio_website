@@ -1,0 +1,23 @@
+#welcome {
+	background: linear-gradient(to bottom, rgba($color-primary-900, 0.8), rgba($color-primary-300, 0.8)),
+		url('/assets/emile-perron-190221-unsplash.jpg');
+	background-size: cover;
+	background-position: center;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	// overflow: hidden;
+}
+
+.main-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30rem;
+
+	h1 {
+		font-size: 10rem;
+		color: white;
+	}
+}
