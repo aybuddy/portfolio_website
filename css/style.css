@@ -53,7 +53,7 @@
     width: 25px;
     height: 3px;
     margin: 5px;
-    background-color: purple;
+    background-color: black;
     transition: all 0.3s ease; }
 
 @media screen and (max-width: 1024px) {
@@ -74,7 +74,7 @@
     width: 40%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
-    background-color: lightblue; }
+    background-color: #0d1226; }
     .navbar-links li {
       opacity: 0; }
   .burger {
@@ -83,7 +83,7 @@
       width: 25px;
       height: 4px;
       margin: 5px;
-      background-color: purple; } }
+      background-color: black; } }
 
 .nav-active {
   transform: translateX(0); }
@@ -122,3 +122,11 @@
   .main-section h1 {
     font-size: 10rem;
     color: white; }
+
+@media screen and (max-width: 768px) {
+  .main-section h1 {
+    font-size: 7rem; } }
+
+@media screen and (max-width: 500px) {
+  .main-section h1 {
+    font-size: 5rem; } }
