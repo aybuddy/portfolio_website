@@ -39,7 +39,7 @@
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color: white;
     border-bottom: solid 2px white;
     padding-bottom: 0.5rem; }
@@ -110,18 +110,31 @@
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  overflow: hidden;
+  position: absolute; }
 
 .main-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 30rem; }
-  .main-section h1 {
-    font-size: 10rem;
-    color: white; }
+  height: 30rem;
+  padding-left: 3rem; }
+  .main-section .heading {
+    font-size: 8rem;
+    color: white;
+    opacity: 0; }
+  .main-section .sub-heading {
+    font-size: 2rem;
+    color: white;
+    opacity: 0;
+    font-family: 'Playfair Display', serif; }
 
 @media screen and (max-width: 768px) {
   .main-section h1 {
@@ -130,3 +143,44 @@
 @media screen and (max-width: 500px) {
   .main-section h1 {
     font-size: 5rem; } }
+
+.slide-in {
+  animation: slideIn 0.5s ease forwards; }
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    visibility: visible; }
+  to {
+    transform: translateX(0%); } }
+
+#projects {
+  background: linear-gradient(to bottom, rgba(13, 18, 38, 0.8), rgba(142, 155, 215, 0.8)), url("/assets/emile-perron-190221-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  overflow: hidden;
+  position: absolute; }
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  padding-left: 3rem; }
+  .projects-section .heading {
+    font-size: 8rem;
+    color: white;
+    opacity: 0; }
+  .projects-section .sub-heading {
+    font-size: 2rem;
+    color: white;
+    opacity: 0;
+    font-family: 'Playfair Display', serif; }
