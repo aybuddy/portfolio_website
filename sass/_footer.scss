@@ -1,0 +1,35 @@
+footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 150px;
+	background-color: black;
+}
+
+footer {
+	nav {
+		display: flex;
+		flex-direction: row;
+		width: 40%;
+	}
+	ul {
+		display: flex;
+		justify-content: space-around;
+		list-style: none;
+		width: 100%;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+.social-nav {
+	margin-left: auto;
+	width: 40%;
+
+	ul {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+	}
+}

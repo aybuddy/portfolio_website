@@ -1,57 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
-        <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
 </head>
-
 <body>
-    <div id="barba-wrapper">
-        <div class="barba-container">
-            <section id="welcome">
-                <header id="header">
-                    <nav id="navbar">
-                        <div class="navbar-logo">
-                            <a href="index.html"><img src="./assets/logo.png" alt="logo"></a>
-                        </div>
-                        <ul class="navbar-links">
-                            <li class="navbar-link"><a href="projects.html">Projects</a></li>
-                            <li class="navbar-link"><a href="about.html">About</a></li>
-                        </ul>
-                        <div class="burger">
-                            <div class="line1"></div>
-                            <div class="line2"></div>
-                            <div class="line3"></div>
-                        </div>
-                    </nav>
-                </header>
-                <div class="main-section">
-                    <h1 class="heading">Aaron Yu</h1>
-                    <h3 class="sub-heading">Javscript & Python Developer</h3>
+    
+    <header>
+        <nav class="main-nav">
+            <ul class="nav__list">
+                <li class="nav__list--item"><a class="nav__link" href="">Home</a></li>
+                <li class="nav__list--item"><a class="nav__link" href="">About</a></li>
+                <li class="nav__list--item"><a class="nav__link" href="">Projects</a></li>
+                <li class="nav__list--item"><a class="nav__link" href="">Contact</a></li>
+                <li class="nav__list--item"><a class="nav__link" href="">Certificates</a></li>
+            </ul>
+        </nav>
+        <nav class="account">
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a class="nav__link nav__link--btn" href="#">JavaScript</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="nav__link nav__link--btn nav__link--btn--highlight" href="#">Python</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="background">
+            <h1 class="primary-heading">Aaron Yu</h1>
+            <h3 class="heading-3">JavaScript and Python Developer</h3>
+            <div class="background-buttons">
+                <a class="button" href="#javascript">JavaScript</a>
+                <a class="button" href="#python">Python</a>
+            </div>
+        </section>
+        <section class="home-about">
+            <h2>About Me</h2>
+            <h4>I am a passionate web developer interested in learning new technologies and improving the product.</h4>
+            <div class="columns">
+                <div class="col col-proj fade-in">
+                    <i class="fab fa-js-square fa-5x"></i>
+                    <h3>JavaScript</h3>
+                    <h4>ReactJS, ExpressJS</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quam quibusdam magni saepe tenetur laboriosam dolore tempore asperiores doloremque dolores!</p>
                 </div>
-                <footer id="social">
+                <div class="col col-proj fade-in">
+                    <i class="fab fa-python fa-5x"></i>
+                    <h3>Python</h3>
+                    <h4>Django, Flask</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quam quibusdam magni saepe tenetur laboriosam dolore tempore asperiores doloremque dolores!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quam quibusdam magni saepe tenetur laboriosam dolore tempore asperiores doloremque dolores!</p>
+                </div>
+                <div class="col col-proj fade-in">
+                    <i class="fab fa-node-js fa-5x"></i>
+                    <h3>Back-End JavaScript</h3>
+                    <h4>NodeJS</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quam quibusdam magni saepe tenetur laboriosam
+                        dolore tempore asperiores doloremque dolores!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quam quibusdam magni saepe tenetur laboriosam
+                        dolore tempore asperiores doloremque dolores!</p>
+                </div>
+            </div>
+        </section>
+        <section class="home-projects">
+            <div class="projects-grid">
+                <p class="slide-in from-left">
+                    I am a project 1
+                </p>
+                <p class="slide-in from-right">
+                    I am a project 2
+                </p>
+            </div>
+            <div class="projects-grid">
+                <p class="slide-in from-left">
+                    I am a project 3
+                </p>
+                <p class="slide-in from-right">
+                    I am a project 4
+                </p>
+            </div>
+            <div class="projects-grid">
+                <p class="slide-in from-left">
+                    I am a project 5
+                </p>
+                <p class="slide-in from-right">
+                    I am a project 6
+                </p>
+            </div>
+            <div class="projects-grid">
+                <p class="slide-in from-left">
+                    I am a project 7
+                </p>
+                <p class="slide-in from-right">
+                    I am a project 8
+                </p>
+            </div>
+        </section>
+        <section class="contact">
+            <form action="">
+                <label for=""></label><input type="text">
+            </form>
+        </section>
+        <section class="certificates">
+            <div class="projects-grid">
+                <p class="slide-in from-left">
+                    I am a project 1
+                </p>
+                <p class="slide-in from-right">
+                    I am a project 2
+                </p>
+            </div>
+            <div class="projects-grid">
+                <p class="slide-in from-left">
+                    I am a project 3
+                </p>
+                <p class="slide-in from-right">
+                    I am a project 4
+                </p>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Certificates</a></li>
+                </ul>
+            </nav>
+            <nav class="social-nav">
+                <ul>
                     <ul>
-                        <li><a href="https://github.com/aybuddy" target="_blank"><i class="fab fa-github fa-3x"></i></a></li>
-                        <li><a href="https://www.freecodecamp.org/fccf8e9066d-3116-4b3b-aef2-500a5c0efe0f" id="profile-link" target="_blank"><i
-                                class="fab fa-free-code-camp fa-3x"></i></a></li>
-                        <li><a href="https://stackoverflow.com/users/9803285/aaron" target="_blank"><i class="fab fa-stack-overflow fa-3x"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/aaronyu-dev/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
-                        <li><a href="https://codepen.io/aybuddy/#" target="_blank"><i class="fab fa-codepen fa-3x"></i></a></li>
+                        <li><a href="https://github.com/aybuddy" target="_blank"><i class="fab fa-github fa-2x"></i></a></li>
+                        <li><a href="https://www.freecodecamp.org/fccf8e9066d-3116-4b3b-aef2-500a5c0efe0f" id="profile-link"
+                                target="_blank"><i class="fab fa-free-code-camp fa-2x"></i></a></li>
+                        <li><a href="https://stackoverflow.com/users/9803285/aaron" target="_blank"><i
+                                    class="fab fa-stack-overflow fa-2x"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/aaronyu-dev/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </li>
+                        <li><a href="https://codepen.io/aybuddy/#" target="_blank"><i class="fab fa-codepen fa-2x"></i></a></li>
                     </ul>
-                </footer>
-            </section>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-    <script src="/js/app.js"></script>
-</body>
+                </ul>
+            </nav>
+        </footer>
+    </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
 </html>

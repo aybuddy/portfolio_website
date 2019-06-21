@@ -1,0 +1,18 @@
+.background {
+	height: 100vh;
+	background: url('../assets/emile-perron-190221-unsplash.jpg');
+	background-size: cover;
+	background-position: center;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+}
+
+.background-buttons {
+	padding-top: 2rem;
+	font-size: 2rem;
+}
