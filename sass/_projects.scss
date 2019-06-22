@@ -1,11 +1,24 @@
+.home-projects {
+	background-color: pink;
+	height: 100%;
+	// display: grid;
+}
+
+// .projects-grid {
+// 	background: pink;
+// 	padding: 4em 0;
+// 	border: solid 1px black;
+// 	width: 100%;
+// 	display: grid;
+// 	grid-gap: 2em;
+// 	align-items: center;
+// 	grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em, 1fr);
+// }
+
 .projects-grid {
-	background: #f4f4f4;
-	padding: 4em 0;
-	display: grid;
-	grid-gap: 2em;
-	align-items: center;
-	grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em, 1fr);
-	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
 }
 .from-left {
 	grid-column: 2 / 3;
