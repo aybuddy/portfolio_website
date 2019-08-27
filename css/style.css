@@ -9,13 +9,6 @@
   flex-direction: column;
   align-items: center; }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 150px;
-  background-color: black; }
-
 footer nav {
   display: flex;
   flex-direction: row;
@@ -40,7 +33,7 @@ footer a {
 
 .background {
   height: 100vh;
-  background: url("../assets/emile-perron-190221-unsplash.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../assets/emile-perron-190221-unsplash.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -54,6 +47,23 @@ footer a {
 .background-buttons {
   padding-top: 2rem;
   font-size: 2rem; }
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-around;
+  width: 50%;
+  padding-top: 4rem; }
+  .social-list a {
+    text-decoration: none;
+    color: white; }
+  .social-list a:link,
+  .social-list a:visited {
+    color: white; }
+  .social-list a:hover {
+    color: #0d1226; }
 
 header {
   --text: #f4f4f4;
