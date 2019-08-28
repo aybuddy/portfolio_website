@@ -1,24 +1,43 @@
-.certificates {
+#certificates {
 	height: 50vh;
 	margin: 2rem;
 }
 
-.cert-columns {
-	display: flex;
+// .cert-columns {
+// 	display: flex;
+// 	width: 100%;
+// 	height: 100%;
+// }
+
+// .card {
+// 	width: 33%;
+// 	height: 30%;
+// }
+
+// .card-1 {
+// 	background-image: url('../assets/Certs/Udemy\ Course\ Completion\ Certificate\(1\).png');
+// 	background-position: center;
+// 	background-size: cover;
+// 	background-repeat: no-repeat;
+// 	max-height: 100%;
+// 	max-width: 100%;
+// }
+
+.cert-cards {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(400px, 1fr));
+	grid-auto-rows: auto;
+	grid-gap: 1rem;
+}
+
+.cert-card {
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: .5rem;
 	width: 100%;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+	display: flex;
 	height: 100%;
-}
-
-.card {
-	width: 33%;
-	height: 30%;
-}
-
-.card-1 {
-	background-image: url('../assets/Certs/Udemy\ Course\ Completion\ Certificate\(1\).png');
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	max-height: 100%;
-	max-width: 100%;
+	flex-direction: row;
+	justify-content: center;
 }
