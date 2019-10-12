@@ -1,18 +1,18 @@
-#home-skills {
-	background: white;
-	height: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	padding: 2rem 0;
-}
+#skills {
+  background: white;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
 
-.skills-list {
-	display: flex;
-	flex-direction: row;
-	list-style: none;
-	justify-content: space-around;
-	width: 80%;
-	align-items: center;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+  }
 }

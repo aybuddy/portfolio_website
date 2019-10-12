@@ -1,35 +1,79 @@
-.primary-heading {
-	font-size: 6rem;
-	font-weight: 300;
-	letter-spacing: 1rem;
+.heading-1 {
+  font-size: 6rem;
+  font-weight: $normal;
+
+  &--main {
+    font-size: 6rem;
+    letter-spacing: 0.6rem;
+  }
 }
 
 .heading-2 {
-	font-size: 5rem;
-	font-weight: 300;
-	letter-spacing: 7px;
-	text-align: center;
+  font-size: 5rem;
+  font-weight: $normal;
+  letter-spacing: 7px;
+  text-align: center;
 }
 
 .heading-3 {
-	font-size: 4rem;
-	font-weight: 300;
-	letter-spacing: 7px;
-	text-align: center;
+  font-size: 4rem;
+  font-weight: $normal;
+  letter-spacing: 0.7rem;
+  text-align: center;
+  &--sub {
+    font-size: 3rem;
+    font-family: $sans-serif;
+    font-weight: $light;
+    letter-spacing: 0.7rem;
+  }
 }
 
 .heading-4 {
-	font-size: 3rem;
-	font-weight: 300;
-	letter-spacing: 7px;
-	text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 7px;
+  text-align: center;
 }
 
-.button {
-	border-top: 2rem;
-	border: solid 2px black;
-	margin: 1rem;
-	padding: 1rem 2rem;
-	border-radius: 100px;
-	text-decoration: none;
+// .button {
+//   border-top: 2rem;
+//   border: solid 2px black;
+//   margin: 1rem;
+//   padding: 1rem 2rem;
+//   border-radius: 100px;
+//   text-decoration: none;
+// }
+
+.btn:link,
+.btn:visited {
+  font-family: $sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 100px;
+  transition: all 0.2s;
+  letter-spacing: 7px;
+  margin: 4px;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: $primary-100;
+  color: $primary-800;
+}
+
+.btn-blue {
+  background-color: $primary-900;
+  color: white;
+  // width: 136px;
 }

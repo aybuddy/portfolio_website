@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap"
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Playfair+Display&display=swap"
       rel="stylesheet"
     />
     <link
@@ -23,13 +23,12 @@
         TODO: Change styling for navbar
         TODO: Sticky navbar
         TODO: Smoothscroll
-        TODO: Change naming convention to BEM
         TODO: Hover animations
     -->
     <header>
       <nav class="navigation">
         <div class="navigation__brand">
-          <a href="#background"><img src="./assets/logo.png" alt="Logo"/></a>
+          <a href="#hero"><img src="./assets/logo.png" alt="Logo"/></a>
         </div>
         <a href="#" class="navigation__toggle">
           <span class="navigation__toggle--bar"></span>
@@ -39,16 +38,16 @@
         <div class="navigation__container">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="#home-projects">Projects</a>
+              <a class="navigation__link" href="projects">Projects</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#home-about">About</a>
+              <a class="navigation__link" href="#about">About</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#home-skills">Skills</a>
+              <a class="navigation__link" href="#skills">Skills</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#home-contact">Contact</a>
+              <a class="navigation__link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -58,11 +57,11 @@
     <!-- TODO: Add in animations for cards -->
 
     <main>
-      <section id="background">
-        <h1 class="primary-heading">Aaron Yu</h1>
-        <h3 class="heading-3">Web Developer</h3>
+      <section id="hero">
+        <h1 class="heading-1--main">Aaron Yu</h1>
+        <h3 class="heading-3--sub">Web Developer</h3>
 
-        <ul class="social-list">
+        <ul class="hero__social">
           <li>
             <a href="https://github.com/aybuddy" target="_blank">
               <i class="fab fa-github fa-4x"></i>
@@ -76,22 +75,25 @@
         </ul>
       </section>
 
-      <section id="home-projects">
+      <section id="projects">
         <h2>Projects</h2>
 
         <div class="cards">
-          <article class="card">
-            <picture class="thumbnail">
+          <article class="cards__card">
+            <picture class="cards__thumbnail">
               <img
                 src="./assets/screenshots/Screenshot (17).png"
                 alt=""
                 class="category__01"
               />
             </picture>
-            <div class="card-content">
-              <h2>Portfolio Website</h2>
-              <hr class="card-line" />
-              <ul class="project-stack">
+            <div class="cards__content">
+              <h2>
+                Portfolio <br />
+                Website
+              </h2>
+              <hr class="cards__line" />
+              <ul class="cards__stack">
                 <li><i class="fab fa-html5 fa-3x"></i></li>
                 <li><i class="fab fa-sass fa-3x"></i></li>
                 <li><i class="fab fa-npm fa-3x"></i></li>
@@ -103,7 +105,7 @@
                 different stacks
               </h4>
 
-              <ul class="card-desc">
+              <ul class="cards__description">
                 <li>Focused on simple UI/UX</li>
                 <li>
                   Built using webpack for bundling and babel for transpiling
@@ -121,18 +123,22 @@
               >
             </footer>
           </article>
-          <article class="card">
-            <picture class="thumbnail">
+
+          <article class="cards__card">
+            <picture class="cards__thumbnail">
               <img
                 src="./assets/screenshots/Screenshot (18).png"
                 alt=""
                 class="category__01"
               />
             </picture>
-            <div class="card-content">
-              <h2>Concordville Cleaners</h2>
-              <hr class="card-line" />
-              <ul class="project-stack">
+            <div class="cards__content">
+              <h2>
+                Concordville <br />
+                Cleaners
+              </h2>
+              <hr class="cards__line" />
+              <ul class="cards__stack">
                 <li><i class="fab fa-wordpress fa-3x"></i></li>
                 <li><i class="fab fa-elementor fa-3x"></i></li>
                 <li><i class="fab fa-google fa-3x"></i></li>
@@ -142,7 +148,7 @@
                 presence
               </h4>
 
-              <ul class="card-desc">
+              <ul class="cards__description">
                 <li>Focused on cleaning up website for better UI</li>
                 <li>Switched to WordPress for easier client management</li>
                 <li>Added advanced analytics for customer retention</li>
@@ -157,21 +163,22 @@
               >
             </footer>
           </article>
-          <article class="card">
-            <picture class="thumbnail">
+
+          <article class="cards__card">
+            <picture class="cards__thumbnail">
               <img
                 src="./assets/screenshots/Screenshot (21).png"
                 alt=""
                 class="category__01"
               />
             </picture>
-            <div class="card-content">
+            <div class="cards__content">
               <h2>
                 Forkify <br />
                 App
               </h2>
-              <hr class="card-line" />
-              <ul class="project-stack">
+              <hr class="cards__line" />
+              <ul class="cards__stack">
                 <li><i class="fab fa-html5 fa-3x"></i></li>
                 <li><i class="fab fa-css3-alt fa-3x"></i></li>
                 <li><i class="fab fa-sass fa-3x"></i></li>
@@ -182,7 +189,7 @@
                 Web application lets users search recipes, ingredients and save
                 it to a list
               </h4>
-              <ul class="card-desc">
+              <ul class="cards__description">
                 <li>Client-Side App focused on API calls</li>
                 <li>Built using webpack and babel</li>
                 <li>MVC architecture</li>
@@ -199,21 +206,21 @@
             </footer>
           </article>
 
-          <article class="card">
-            <picture class="thumbnail">
+          <article class="cards__card">
+            <picture class="cards__thumbnail">
               <img
                 src="./assets/screenshots/Natours.png"
                 alt=""
                 class="category__01"
               />
             </picture>
-            <div class="card-content">
+            <div class="cards__content">
               <h2>
                 Natours <br />
                 App
               </h2>
-              <hr class="card-line" />
-              <ul class="project-stack">
+              <hr class="cards__line" />
+              <ul class="cards__stack">
                 <li><i class="fab fa-node fa-3x"></i></li>
                 <li>
                   <img
@@ -238,7 +245,7 @@
                 MongoDB Atlas
               </h4>
 
-              <ul class="card-desc">
+              <ul class="cards__description">
                 <li>
                   RESTful API architecture with CRUD operations on a NoSQL
                   database
@@ -266,7 +273,7 @@
         </div>
       </section>
 
-      <section id="home-about">
+      <section id="about">
         <h2>About Me</h2>
         <h4>
           I am an enthusiastic web developer passionate about implementing
@@ -276,16 +283,34 @@
         </h4>
       </section>
 
-      <section id="home-skills">
-        <ul class="skills-list">
-          <li><img src="./assets/icons/icons8-html-5.svg" alt="" /></li>
-          <li><img src="./assets/icons/icons8-css3.svg" alt="" /></li>
-          <li><img src="./assets/icons/icons8-javascript.svg" alt="" /></li>
-          <li><img src="./assets/icons/icons8-python.svg" alt="" /></li>
-          <li><img src="./assets/icons/icons8-nodejs.svg" alt="" /></li>
-          <li><img src="./assets/icons/icons8-git.svg" alt="" /></li>
-          <li><img src="./assets/icons/icons8-mongodb.svg" alt="" /></li>
-          <li><img src="./assets/icons/icons8-postgresql.svg" alt="" /></li>
+      <section id="skills">
+        <ul class="skills__list">
+          <li>
+            <img src="./assets/icons/icons8-html-5.svg" alt="HTML 5 icon" />
+          </li>
+          <li><img src="./assets/icons/icons8-css3.svg" alt="CSS 3 icon" /></li>
+          <li>
+            <img
+              src="./assets/icons/icons8-javascript.svg"
+              alt="Javascript icon"
+            />
+          </li>
+          <li>
+            <img src="./assets/icons/icons8-python.svg" alt="Python icon" />
+          </li>
+          <li>
+            <img src="./assets/icons/icons8-nodejs.svg" alt="NodeJS icon" />
+          </li>
+          <li><img src="./assets/icons/icons8-git.svg" alt="Git icon" /></li>
+          <li>
+            <img src="./assets/icons/icons8-mongodb.svg" alt="MongoDB icon" />
+          </li>
+          <li>
+            <img
+              src="./assets/icons/icons8-postgresql.svg"
+              alt="PostgreSQL icon"
+            />
+          </li>
         </ul>
       </section>
 
@@ -293,7 +318,7 @@
           TODO: Create contact form
           TODO: Connect submit to hosting site
         -->
-      <section id="home-contact">
+      <section id="contact">
         <form action=""><label for=""></label><input type="text" /></form>
       </section>
     </main>
