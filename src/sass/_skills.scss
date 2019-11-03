@@ -6,13 +6,13 @@
   align-items: center;
   flex-direction: column;
   padding: 2rem 0;
+}
 
-  &__list {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-around;
-    width: 80%;
-    align-items: center;
-  }
+.skills__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+  width: 80%;
+  align-items: center;
 }
