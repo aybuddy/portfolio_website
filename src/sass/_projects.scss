@@ -1,22 +1,23 @@
 #projects {
   background-color: white;
   height: 100%;
-
-  h2 {
-    padding-top: 2rem;
-    text-align: center;
-  }
-
-  h3 {
-    text-align: center;
-    font-size: 3.2rem;
-  }
-
-  h4 {
-    text-align: center;
-    font-size: 2rem;
-  }
 }
+
+h2 {
+  padding-top: 8rem;
+  text-align: center;
+  font-size: 5rem;
+}
+
+h3 {
+  text-align: center;
+  font-size: 3.2rem;
+}
+
+// h4 {
+//   text-align: center;
+//   font-size: 2rem;
+// }
 
 .cards {
   display: grid;
@@ -41,10 +42,16 @@
 
     h4 {
       text-align: center;
-      font-size: 10rem;
+      font-size: 2rem;
       width: 100%;
       padding-bottom: 2rem;
     }
+  }
+
+  &__title {
+    padding-top: 8rem;
+    text-align: center;
+    font-size: 5rem;
   }
 
   &__thumbnail img {
@@ -84,37 +91,17 @@
   }
 }
 
-// .col-proj {
-//   height: 90%;
-// }
+@media (max-width: 430px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 2rem;
+    padding: 5rem 2rem;
+  }
 
-// .columns {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   padding-top: 2rem;
-//   // padding: 20rem;
-//   width: 100%;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// .col {
-//   width: 40%;
-//   border: solid 2px black;
-//   padding: 2rem;
-//   margin: 2rem;
-//   text-align: center;
-//   height: 100%;
-// }
-
-// .full-img {
-//   background-image: url("../assets/screenshots/Screenshot\ \(17\).png");
-//   height: 100%;
-//   background-size: cover;
-// }
-
-// .icon-list {
-//   height: 30px;
-//   width: 30px;
-// }
+  .cards__title {
+    font-size: 4rem;
+    padding-top: 2rem;
+  }
+}
