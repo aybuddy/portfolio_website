@@ -7,7 +7,6 @@ const navbarLinks = document.getElementsByClassName("navigation__container")[0];
 
 document.addEventListener("click", evt => {
   if (evt.target === toggleButton) navbarLinks.classList.toggle("active");
-  console.log(evt.target);
 });
 
 // SmoothScroll
