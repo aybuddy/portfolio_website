@@ -1,11 +1,16 @@
 import "./sass/main.scss";
 
+// Responsive Nav
+
 const toggleButton = document.getElementsByClassName("navigation__toggle")[0];
 const navbarLinks = document.getElementsByClassName("navigation__container")[0];
 
-toggleButton.addEventListener("click", () => {
-  navbarLinks.classList.toggle("active");
+document.addEventListener("click", evt => {
+  if (evt.target === toggleButton) navbarLinks.classList.toggle("active");
+  console.log(evt.target);
 });
+
+// SmoothScroll
 
 function smoothScroll(target, duration) {
   var target = document.querySelector(target);
@@ -16,7 +21,6 @@ function smoothScroll(target, duration) {
 
   function animationScroll(currentTime) {
     if (startTime === null) startTime = currentTime;
-    console.log(startTime);
     var timeElapsed = currentTime - startTime;
     var run = ease(timeElapsed, startPosition, distance, duration);
     window.scrollTo(0, run);
