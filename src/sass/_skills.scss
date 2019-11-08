@@ -1,12 +1,15 @@
 #skills {
   background: white;
-  height: 100%;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2rem 0;
-  margin: 5rem 0;
+  margin: 3rem 0;
+}
+#skills h2 {
+  padding-top: 0rem;
+  padding-bottom: 8rem;
 }
 
 .skills__list {
@@ -19,6 +22,9 @@
 }
 
 @media (max-width: 430px) {
+  #skills {
+    height: 50vh;
+  }
   .skills__list {
     display: flex;
     flex-direction: row;
@@ -27,5 +33,11 @@
   }
   .skills__list img {
     padding: 0 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  #skills {
+    height: 40vh;
   }
 }
